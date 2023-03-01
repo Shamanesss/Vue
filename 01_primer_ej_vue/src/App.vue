@@ -1,15 +1,21 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+<NavBar />
+  <img alt="Vue logo" id="cat" src="./assets/pexels-александар-цветановић-1440387.jpg">
+  <HelloWorld msg="Welcome to the First Page in Vue"/>
+  <PrimerComponente msg1="Este es mi primer Componente"/>
 </template>
 
 <script>
 import HelloWorld from './components/HelloWorld.vue'
+import PrimerComponente from './components/PrimerComponente.vue'
+import NavBar from './components/NavBar'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    HelloWorld,
+    PrimerComponente,
+    NavBar
   }
 }
 </script>
@@ -22,5 +28,12 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+  font-size:4rem;
+   color: #42b983;
 }
+#cat{
+  width:40rem;
+  border-radius:5%;
+}
+
 </style>
