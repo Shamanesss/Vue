@@ -1,8 +1,7 @@
 <template>
   <div class="hello">
     <h1>{{ msg }}</h1>
-
-   </div>
+  </div>
 </template>
 
 <script>
@@ -10,8 +9,16 @@ export default {
   name: 'HelloWorld',
   props: {
     msg: String
+  },
+
+  setup(){
+    const mipropiedad = "nombrepropiedadt"
+    
+    return {
+    mipropiedad,
+    }
   }
-}
+  }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
